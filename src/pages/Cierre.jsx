@@ -9,7 +9,13 @@ import Perfil from '../components/Perfil'
 
 const Cierre = () => {
 
-  const [data, setData] = useState([]);
+  const [data, setData] = useState([{
+    padecimientos: '',
+    exploracion: '',
+    diagnostico: '',
+    receta: '',
+    notas: ''
+  }]);
 
   const getData = async () => {
     const querySnapshot = await getDocs(collection(db, "data"));
@@ -32,8 +38,7 @@ const Cierre = () => {
         setData([...result]);
       });
   }, []);
-
-  const {diagnostico, exploracion, notas, padecimientos, receta} = data[data.length - 1]
+  const {diagnostico, exploracion, notas, padecimientos, receta} = data[data.length -1 || 0]
 
   return (
     <Container>
