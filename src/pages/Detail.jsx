@@ -6,6 +6,7 @@ import paciente from '../assets/images/paciente.jpg'
 
 
 const Detail = () => {
+  const text = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, a hic, suscipit placeat enim natus explicabo adipisci cumque dolores asperiores magni mollitia. Aspernatur alias assumenda, recusandae at accusantium vel reiciendis tempora labore, suscipit nam veniam itaque, ipsum odit deleniti temporibus consequuntur ipsa voluptas! Iusto rerum tempora quos sed tenetur quod atque, aspernatur saepe laudantium, laboriosam eaque rem excepturi nam omnis nobis adipisci? Veniam consequuntur laborum, quas perferendis quae quisquam sequi odio, ducimus numquam quidem, exercitationem totam? Magni porro soluta modi quaerat, sit dolor consequuntur deserunt omnis culpa beatae nobis cum ratione cumque consequatur nisi odit repellendus. Accusantium provident totam ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, deserunt quod facere tenetur molestiae vero culpa maiores quos eveniet. At dignissimos molestias deleniti numquam qui reiciendis excepturi officiis ipsa tempora! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum commodi velit est a sed exercitationem recusandae ullam officiis dignissimos quae, nemo, eligendi accusantium sapiente nulla id corporis vitae cumque quas. lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error incidunt eaque laborum nesciunt eius? Ad numquam nobis sunt vel repellat rerum ex deleniti animi quas recusandae fuga dicta cum est veritatis quidem culpa eius provident quasi exercitationem voluptate, dolores neque distinctio quae voluptas. Nam ut repellendus dolorum quisquam odio repellat!'
   return (
     <ContainerDetail>
       <HeaderDetail>
@@ -43,8 +44,7 @@ const Detail = () => {
       </Datos>
       <DatoHistorial>
         <h3>Historial de consultas</h3>
-        <Historial>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, a hic, suscipit placeat enim natus explicabo adipisci cumque dolores asperiores magni mollitia. Aspernatur alias assumenda, recusandae at accusantium vel reiciendis tempora labore, suscipit nam veniam itaque, ipsum odit deleniti temporibus consequuntur ipsa voluptas! Iusto rerum tempora quos sed tenetur quod atque, aspernatur saepe laudantium, laboriosam eaque rem excepturi nam omnis nobis adipisci? Veniam consequuntur laborum, quas perferendis quae quisquam sequi odio, ducimus numquam quidem, exercitationem totam? Magni porro soluta modi quaerat, sit dolor consequuntur deserunt omnis culpa beatae nobis cum ratione cumque consequatur nisi odit repellendus. Accusantium provident totam ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, deserunt quod facere tenetur molestiae vero culpa maiores quos eveniet. At dignissimos molestias deleniti numquam qui reiciendis excepturi officiis ipsa tempora! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum commodi velit est a sed exercitationem recusandae ullam officiis dignissimos quae, nemo, eligendi accusantium sapiente nulla id corporis vitae cumque quas. lorem Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error incidunt eaque laborum nesciunt eius? Ad numquam nobis sunt vel repellat rerum ex deleniti animi quas recusandae fuga dicta cum est veritatis quidem culpa eius provident quasi exercitationem voluptate, dolores neque distinctio quae voluptas. Nam ut repellendus dolorum quisquam odio repellat!
+        <Historial defaultValue={text}>
         </Historial>
       </DatoHistorial>
       </SectionInfo>
@@ -103,6 +103,6 @@ const DatoHistorial = styled.div`
 `
 
 const Historial = styled.textarea`
-width: 80%;
-    height: 65%;
+  width: 80%;
+  height: 65%;
 `
